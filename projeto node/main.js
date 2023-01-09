@@ -3,6 +3,10 @@ import Express, { response }  from "express";
 // instancia sempre me retorna o produto final produto final 
 
 const app = Express()
+
+//middlewares = meio de compo 
+app.use(Express.json()) 
+
 // CRUD = index
 // CRUD = CREATE, READ, UPDATE, DELETE 
 
@@ -14,7 +18,7 @@ app.get("/", (request, response) => {
 // create = POST 
 app.post("/", (request, response) => {
 
-    response.send("Usuario criado")
+    response.send(`usuario ${request.body.nome} foi criado com sucesso`)
 
 })
 
