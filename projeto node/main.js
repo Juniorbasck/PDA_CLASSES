@@ -33,10 +33,16 @@ app.post("/", (request, response) => {
 })
 
 // Update = PUT
-app.put("/", (request, response) => {
+app.put("/:id", (request, response) => {
+    const id = Number(request.params.id);
+
     bd_usarios.map((elemento, index) => {
-        console.log(elemento, index)
-    })
+
+        if(elemento.id === id){
+            bd_usarios.splice(index, 1, request.body)
+        }
+    });
+
     response.send("Usuario atulizado")
 })
 
