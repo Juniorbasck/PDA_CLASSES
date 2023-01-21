@@ -15,7 +15,7 @@ app.use((request, response, next) =>{
 //simular dados 
 const bd_usarios = []
 
-
+        
 // CRUD = index
 // CRUD = CREATE, READ, UPDATE, DELETE 
 
@@ -25,7 +25,7 @@ app.get("/", (request, response) => {
 })
 
 // create = POST 
-app.post("/", (request, response) => {
+app.post("/", (request, response) => {  
 
     bd_usarios.push(request.body)
     response.send(`usuario ${request.body.nome} foi criado com sucesso`)
@@ -58,3 +58,9 @@ const port = 3000
 app .listen(port, () => {
     console.log("Api online na porta: http://localhost:3000")
 })
+
+
+
+
+
+
