@@ -10,3 +10,6 @@ const operacaoMatematica = primeiroNumero + segundoNumero;
 console.log(operacaoMatematica);
 
 // NaN -> not a number (não é um numero)
+
+const texto = "texto"
+

@@ -11,7 +11,7 @@ const StringDeNumeros = "223982"; //isso para o javaScript ainda é uma string
 const citacao = "Meu nomes é: ";
 const meuNome = "junior";
 
-console.log(citacao + meuNome);
+console.log(citacao + meuNome); 
 
 //TEMPLATE STRING OU TEMPLATE LITERAL
 
