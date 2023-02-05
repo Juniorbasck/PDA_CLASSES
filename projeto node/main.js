@@ -51,8 +51,6 @@ app.delete("/", (request, response) => {
     response.send("usuario deletado")   
 })
 
-
-
 // ouvindo de porta 
 const port = 3000 
 app .listen(port, () => {
