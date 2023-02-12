@@ -9,3 +9,4 @@ const nomes = ['João', 'Juliana', 'Ana', 'Caio', 'Lara', 'Marjorie', 'guilherme
  console.log(`Alunos da sala 1: ${sala1}`)
 console.log(`Alunos da sala 2: ${sala2}`)
 
+
