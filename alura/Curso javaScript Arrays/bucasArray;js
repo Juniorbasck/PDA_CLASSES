@@ -6,7 +6,7 @@ let listaDenotas = [sala, medias];
 
 const exbir = (nome) =>  {
     if(listaDenotas [0].includes(nome)){
-        
+
         let indice = listaDenotas[0].indexOf(nome)
 
         return console.log(`${listaDenotas[0][indice]} sua media é ${listaDenotas[1][indice]}`);
@@ -16,4 +16,4 @@ const exbir = (nome) =>  {
 }
 
 
-console.log(exbir("Vínicius"));
+console.log(exbir("Junior"));
