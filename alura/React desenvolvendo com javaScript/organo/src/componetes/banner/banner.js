@@ -1,9 +1,8 @@
 function Banner(){
     //JSX
     return (
-        <img scr="../../public/imagens/banner.png" alt="banner principal do pagina"/>
-        
-    );
+        <img src="/imagens/banner.png" alt="imagem de backgroud"/>
+    )
 }
 
 export default Banner; 
