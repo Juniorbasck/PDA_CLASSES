@@ -1,7 +1,11 @@
+import './banner.css';
+
 function Banner(){
     //JSX
     return (
-        <img src="/imagens/banner.png" alt="imagem de backgroud"/>
+        <header className='banner'>
+          <img src="/imagens/banner.png" alt="imagem de backgroud"/>
+        </header>
     )
 }
 
