@@ -2,10 +2,11 @@ import './botao.css';
 
 const Botao = (props) => {
     
-    return (<Botao>
-        {props.texto}
-    </Botao>)
-};
+    return(
+        <Botao>
+            {props.texto}
+        </Botao>
+    )
+}
 
-
-export default Botao; 
+export default Botao;
