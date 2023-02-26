@@ -4,7 +4,7 @@ import ListaSuspensa from '../ListaSuspensa';
 import CampoTexto from '../compoTexto';
 import './formulario.css';
 
-const Formulario = () => {
+const Formulario = (props) => {
     
     const times = [
         'Programação',
@@ -23,7 +23,12 @@ const Formulario = () => {
 
     const aoSalvar = (evento) => {
         evento.preventDefault()
-        console.log('formulario submetido =>  ', nome, cargo, cargo, imagem, time)
+        props.aoColaboradoraCadastrado({
+            nome,
+            cargo, 
+            imagem, 
+            time
+        })
     }
 
     return (
@@ -58,7 +63,7 @@ const Formulario = () => {
                      aoAlterado={valor => setTime(valor)}
                      />
                 <Botao>
-                    Criar card!
+                    Criar card
                 </Botao>
             </form>
         </selection>
