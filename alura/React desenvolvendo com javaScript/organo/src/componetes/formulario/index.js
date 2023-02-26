@@ -19,10 +19,11 @@ const Formulario = () => {
     const [nome, setNome] = useState(''); 
     const [cargo, setCargo] = useState(''); 
     const [imagem, setImagem] = useState(''); 
+    const [time, setTime] = useState(''); 
 
     const aoSalvar = (evento) => {
         evento.preventDefault()
-        console.log('formulario submetido =>  ', nome, cargo, cargo, imagem)
+        console.log('formulario submetido =>  ', nome, cargo, cargo, imagem, time)
     }
 
     return (
@@ -53,9 +54,11 @@ const Formulario = () => {
                      obrigatorio={true} 
                      label="Time" 
                      itens={times}
+                     valor={time}   
+                     aoAlterado={valor => setTime(valor)}
                      />
                 <Botao>
-                    Criar card
+                    Criar card!
                 </Botao>
             </form>
         </selection>
