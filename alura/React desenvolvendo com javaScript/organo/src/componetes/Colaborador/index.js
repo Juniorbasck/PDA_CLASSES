@@ -1,7 +1,7 @@
-import './Membro.css';
+import './Colaborador.css';
 
 
-const Membro = () => {
+const Colaborador = () => {
 
     return(
         <div className='membro'>
@@ -17,4 +17,4 @@ const Membro = () => {
     )
 }
 
-export  default Membro; 
+export  default Colaborador; 
