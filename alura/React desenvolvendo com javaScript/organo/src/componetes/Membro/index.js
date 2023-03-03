@@ -4,14 +4,14 @@ import './Membro.css';
 const Membro = () => {
 
     return(
-        <div>
-            <div>
+        <div className='membro'>
+            <div className='cabecalho'>
                 <img src='https://github.com/juniorbasck.png' alt='Adilson Junior'/>
             </div>
 
-            <div>
+            <div className='rodape'>
                 <h4>Junior</h4>
-                <h5>Instrutopor</h5>
+                <h5>Desenvolvedor</h5>
             </div>
         </div>
     )
