@@ -1,3 +1,4 @@
+import Membro from '../Membro';
 import './Time.css'
 
 const Time = props => {
@@ -6,6 +7,7 @@ const Time = props => {
 
         <section className='time' style={{ background: props.corSecundaria}}>
             <h3 style={{ borderColor: props.corPrimaria }}>{props.nome}</h3>
+            <Membro/>
         </section>
     )
 }
