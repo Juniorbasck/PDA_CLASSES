@@ -7,14 +7,31 @@ function trataErro(erro){
     throw new Error(chalk.red(erro.code, 'Não é arquivo no diretorio PORRAAA'));
 }
 
-function pegarArquivo(caminhoArquivo){
+//async e await
 
-     const encoding = 'utf-8';
-     fs.promises.readFile(caminhoArquivo, encoding)
-     .then((texo) => chalk.green(console.log(texo)))
-     .catch((erro) => trataErro(erro))
+ async function pegaArquivo(caminhoArquivo){
+    const encoding = 'utf-8';
+    try{
 
-}  
+        const texo = await fs.promises.readFile(caminhoArquivo, encoding)
+    
+        console.log(chalk.green(texo))
+    }catch(erro){
+
+        trataErro(erro)
+        
+    }   
+    
+}
+
+// function pegarArquivo(caminhoArquivo){
+
+//      const encoding = 'utf-8';
+//      fs.promises.readFile(caminhoArquivo, encoding)
+//      .then((texo) => chalk.green(console.log(texo)))
+//      .catch((erro) => trataErro(erro))
+
+// }  
 
 
 /* function pegarArquivo(caminhoArquivo){
@@ -30,5 +47,6 @@ function pegarArquivo(caminhoArquivo){
     })
 
 } */
+
 
 pegarArquivo('./arquivos/texto.md');
