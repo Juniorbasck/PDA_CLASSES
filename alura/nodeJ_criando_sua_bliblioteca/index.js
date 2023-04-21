@@ -34,7 +34,7 @@ function trataErro(erro){
 
         const texo = await fs.promises.readFile(caminhoArquivo, encoding)
     
-        console.log(chalk.green(texo))
+        console.log(extraiLinks(texo));  
     }catch(erro){
 
         trataErro(erro)
@@ -43,14 +43,16 @@ function trataErro(erro){
     
 }
 
-// // function pegarArquivo(caminhoArquivo){
+pegaArquivo('./arquivos/texto.md');
 
-// //      const encoding = 'utf-8';
-// //      fs.promises.readFile(caminhoArquivo, encoding)
-// //      .then((texo) => chalk.green(console.log(texo)))
-// //      .catch((erro) => trataErro(erro))
+// function pegarArquivo(caminhoArquivo){
 
-// // }  
+//      const encoding = 'utf-8';
+//      fs.promises.readFile(caminhoArquivo, encoding)
+//      .then((texo) => chalk.green(console.log(texo)))
+//      .catch((erro) => trataErro(erro))
+
+// }  
 
 
 /* function pegarArquivo(caminhoArquivo){
@@ -68,4 +70,3 @@ function trataErro(erro){
 } */
 
 
-pegarArquivo('./arquivos/texto.md');
